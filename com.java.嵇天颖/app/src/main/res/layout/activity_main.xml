@@ -1,0 +1,21 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_primary_color"
+    android:fitsSystemWindows="false"
+    >
+
+    <!--主界面内容-->
+
+    <include
+        android:id="@+id/main_page"
+        layout="@layout/main_page"/>
+
+    <!--侧边菜单-->
+
+    <include android:id="@+id/drawer"
+        layout="@layout/layout_drawer"/>
+
+</android.support.v4.widget.DrawerLayout>

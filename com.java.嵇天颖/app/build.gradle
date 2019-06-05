@@ -1,0 +1,103 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.mob.sdk'
+android {
+    lintOptions {
+        // 防止在发布的时候出现因MissingTranslation导致Build Failed!
+        disable 'MissingTranslation'
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false;
+    }
+    compileSdkVersion 21
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.java.a5"
+        minSdkVersion 16
+        targetSdkVersion 21
+        versionCode 4
+        versionName "beta-1.1.0"
+    }
+    signingConfigs {
+        release {
+            storeFile file("myreleasekey.keystore")
+            storePassword "password"
+            keyAlias "MyReleaseKey"
+            keyPassword "password"
+            v2SigningEnabled false
+        }
+    }
+
+    buildTypes {
+        release {
+            // runProguard false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+MobSDK {
+    appKey "27af654d66af0"
+    appSecret "14be21079d1fd407e45fc1a14db9581e"
+
+    ShareSDK {
+        //平台配置信息
+        devInfo {
+            SinaWeibo {
+                appKey "943765048"
+                appSecret "bac249532bd45c0530f336d1bbb553b6"
+                callbackUri "http://www.sharesdk.cn"
+                shareByAppClient false
+            }
+            Wechat {
+                appId "wx4868b35061f87885"
+                appSecret "64020361b8ec4c99936c0e3999a9f249"
+            }
+            QQ {
+                appId "100371282"
+                appKey "aed9b0303e3ed1e27bae87c33761161d"
+                shareByAppClient true
+            }
+            Facebook {
+                appKey "1412473428822331"
+                appSecret "a42f4f3f867dc947b9ed6020c2e93558"
+                callbackUri "https://mob.com"
+            }
+        }
+    }
+
+}
+repositories {
+    jcenter()
+    maven { url "https://github.com/MarsVard/IonIconView/raw/master/maven" }
+    mavenCentral()
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:cardview-v7:21.0.2'
+    compile 'com.android.support:recyclerview-v7:21.0.2'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'com.github.ksoichiro:android-observablescrollview:1.5.0'
+    //下拉刷新
+    compile 'in.srain.cube:ultra-ptr:1.0.7@aar'
+    compile 'com.jpardogo.materialtabstrip:library:1.0.8'
+    compile 'com.balysv.materialmenu:material-menu-toolbar:1.5.1'
+    compile 'be.webelite:ion-iconview:1.0.4@aar'
+    compile files('libs/ormlite-android-4.49-SNAPSHOT.jar')
+    compile files('libs/umeng-update-v2.6.0.jar')
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'asia.ivity.android:drag-sort-listview:1.0'
+    compile files('libs/Msc.jar')
+    compile files('libs/Sunflower.jar')
+    compile files('libs/json-20170516.jar')
+    compile files('libs/jdom-1.1.3.jar')
+    //compile 'com.squareup.okhttp3:mockwebserver:3.11.0'
+    //compile 'com.squareup.retrofit2:retrofit:2.4.0'
+    //compile 'com.github.faruktoptas:RetrofitRssConverterFactory:latest.release.here'
+    compile files('libs/android-rome-feed-reader-1.0.0-r2.jar')
+}
+

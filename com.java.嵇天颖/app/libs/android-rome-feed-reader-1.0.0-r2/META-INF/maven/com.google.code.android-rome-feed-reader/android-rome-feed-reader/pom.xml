@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.google.code.android-rome-feed-reader</groupId>
+  <artifactId>android-rome-feed-reader</artifactId>
+  <name>Android ROME Feed Reader</name>
+  <version>1.0.0-r2</version>
+
+  <url>http://code.google.com/p/android-rome-feed-reader/</url>
+
+  <scm>
+    <url>http://code.google.com/p/android-rome-feed-reader/source/browse/tags/android-rome-feed-reader-1.0.0-r2</url>
+    <connection>scm:svn:http://android-rome-feed-reader.googlecode.com/svn/tags/android-rome-feed-reader-1.0.0-r2</connection>
+    <developerConnection>scm:svn:https://android-rome-feed-reader.googlecode.com/svn/tags/android-rome-feed-reader-1.0.0-r2</developerConnection>
+  </scm>
+
+  <developers>
+    <developer>
+      <id>ashlux</id>
+      <name>Ash Lux</name>
+      <url>http://www.ashlux.com/</url>
+      <email>ashlux@gmail.com</email>
+    </developer>
+  </developers>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <!--<phase>process-classes</phase>-->
+            <phase>package</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <tasks>
+                <ant antfile="${basedir}/build.xml" target="repackage">
+                  <property name="output.final" value="${build.directory}/${build.finalName}.jar" />
+                </ant>
+              </tasks>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+    <extensions>
+            <extension>
+                    <groupId>org.apache.maven.wagon</groupId>
+                    <artifactId>wagon-scm</artifactId>
+                    <version>1.0-beta-6</version>
+            </extension>
+            <extension>
+                    <groupId>org.apache.maven.scm</groupId>
+                    <artifactId>maven-scm-manager-plexus</artifactId>
+                    <version>1.1</version>
+            </extension>
+            <extension>
+                    <groupId>org.apache.maven.scm</groupId>
+                    <artifactId>maven-scm-provider-svnexe</artifactId>
+                    <version>1.1</version>
+            </extension>
+    </extensions>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.jdom</groupId>
+      <artifactId>jdom</artifactId>
+      <version>1.1.1-android-fork</version>
+    </dependency>
+  </dependencies>
+
+  <distributionManagement>
+    <repository>
+      <id>android-rome-feed-reader-repository</id>
+      <name>Android ROME Feed Reader Repository</name>
+      <url>scm:svn:https://android-rome-feed-reader.googlecode.com/svn/maven2/releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>android-rome-feed-reader-snapshots</id>
+      <name>Android ROME Feed Reader Repository</name>
+      <url>scm:svn:https://android-rome-feed-reader.googlecode.com/svn/maven2/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+</project>

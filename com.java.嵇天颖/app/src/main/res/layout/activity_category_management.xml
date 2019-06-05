@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/back_ground_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/common_toolbar"/>
+
+    <TextView
+        android:id="@+id/watched"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/view_margin"
+        android:textSize="@dimen/text_size_title"
+        android:textAlignment="center"
+        android:text="关注"
+        />
+    <com.mobeta.android.dslv.DragSortListView
+        xmlns:dslv="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/dslvWatchList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:layout_margin="3dp"
+        android:dividerHeight="1px"
+        android:padding="3dp"
+        android:fadeScrollbars="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+
+        dslv:collapsed_height="5px"
+        dslv:float_background_color="?attr/colorPrimary"
+        dslv:slide_shuffle_speed="0.6"
+        dslv:sort_enabled="true"
+        dslv:drag_start_mode="onLongPress"
+        dslv:remove_enabled="true"
+        dslv:remove_mode="clickRemove"
+        dslv:click_remove_id="@+id/item_category_watchIcon"
+        dslv:paddingEnd="10px"
+        />
+    <TextView
+    android:id="@+id/unwatched"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/view_margin"
+    android:textSize="@dimen/text_size_title"
+    android:textAlignment="center"
+    android:text="取消关注"
+    />
+    <com.mobeta.android.dslv.DragSortListView
+        xmlns:dslv="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/dslvUnwatchList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:layout_margin="3dp"
+        android:dividerHeight="1px"
+        android:padding="3dp"
+        android:fadeScrollbars="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+
+        dslv:collapsed_height="5px"
+        dslv:float_background_color="?attr/colorPrimary"
+        dslv:slide_shuffle_speed="0.6"
+        dslv:sort_enabled="true"
+        dslv:drag_start_mode="onLongPress"
+        dslv:remove_enabled="true"
+        dslv:remove_mode="clickRemove"
+        dslv:click_remove_id="@+id/item_category_unwatchIcon"
+        />
+
+</LinearLayout>

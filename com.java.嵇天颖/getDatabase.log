@@ -1,0 +1,9 @@
+ ~/Android/Sdk/platform-tools/adb shell
+su 
+cp -r data/data/com.ihandy.s2014011446/databases /mnt/sdcard/database_tmp
+
+another terminal:
+
+cd ~/Java/final/News/
+ ~/Android/Sdk/platform-tools/adb pull  /mnt/sdcard/database_tmp/  ./
+

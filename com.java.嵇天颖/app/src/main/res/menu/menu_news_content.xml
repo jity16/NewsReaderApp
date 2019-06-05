@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.java.a5.ui.NewsContentActivity">
+    <item android:id="@+id/action_speak"
+        android:title="Speak"
+        android:icon="@drawable/voice_full"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_shutup"
+        android:title="Shutup"
+        android:icon="@drawable/voice_empty"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_share"
+        android:title="@string/share"
+        android:icon="@drawable/ic_share_white_16dp"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        />
+    <item android:id="@+id/action_favorite"
+        android:title="common"
+        android:icon="@drawable/ic_favorite_white"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+</menu>

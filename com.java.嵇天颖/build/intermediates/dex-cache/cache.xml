@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\MCC\Desktop\news_ybt\news\app\libs\android-rome-feed-reader-1.0.0-r2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="868c7f0ce1e544561bc3222aefa060a007e1642b">
+        <dex dex="C:\Users\MCC\Desktop\news_ybt\news\app\build\intermediates\pre-dexed\debug\android-rome-feed-reader-1.0.0-r2_41937714491455db87a7cad5fbf7e5eeee021ca4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MCC\Desktop\news_ybt\news\app\libs\umeng-update-v2.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8f00af139315de2cd24466f0c72e497fccd0b631">
+        <dex dex="C:\Users\MCC\Desktop\news_ybt\news\app\build\intermediates\pre-dexed\debug\umeng-update-v2.6.0_6e25d392080ae6e4cef4b93d051ba405ef7f8ccc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MCC\Desktop\news_ybt\news\app\libs\jdom-1.1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bdfeb39fa929c35f5e4f0b02d34350db39a1efc">
+        <dex dex="C:\Users\MCC\Desktop\news_ybt\news\app\build\intermediates\pre-dexed\debug\jdom-1.1.3_f3c46eb8de99dc846293f38d126a3fdbbec5ecd5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MCC\Desktop\news_ybt\news\app\libs\jsoup-1.7.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ab1f22cadc2f8b514e55ba368f5128056fe304da">
+        <dex dex="C:\Users\MCC\Desktop\news_ybt\news\app\build\intermediates\pre-dexed\debug\jsoup-1.7.3_e60808fd8c77134e6403740feaf0880405a3e044.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MCC\Desktop\news_ybt\news\app\libs\mframework.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="25509058b34a5ee08dbf66e57078e3083735d200">
+        <dex dex="C:\Users\MCC\Desktop\news_ybt\news\app\build\intermediates\pre-dexed\debug\mframework_fea993982a4a5ac71d63067f8e9db59c83c6dbe0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MCC\Desktop\news_ybt\news\app\libs\Sunflower.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dffa0220b64d2017db2517325926313c5f186d73">
+        <dex dex="C:\Users\MCC\Desktop\news_ybt\news\app\build\intermediates\pre-dexed\debug\Sunflower_2f391d77e45ddc49f09f46fe8ad11538152102f0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MCC\Desktop\news_ybt\news\app\libs\json-20170516.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="949abe1460757b8dc9902c562f83e49675444572">
+        <dex dex="C:\Users\MCC\Desktop\news_ybt\news\app\build\intermediates\pre-dexed\debug\json-20170516_e4e4d5bddac6c1cf4ba9c531dd1cab348ef260d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MCC\Desktop\news_ybt\news\app\libs\ormlite-core-4.49-SNAPSHOT.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9a8b276da6dada8141f614d3feba25a0e8589db7">
+        <dex dex="C:\Users\MCC\Desktop\news_ybt\news\app\build\intermediates\pre-dexed\debug\ormlite-core-4.49-SNAPSHOT_dec879471b0be40b53590348049a17db5307cba5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MCC\Desktop\news_ybt\news\app\libs\ormlite-android-4.49-SNAPSHOT.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ecfae85e17f2472852fa8298952f9d52f6a6bfa4">
+        <dex dex="C:\Users\MCC\Desktop\news_ybt\news\app\build\intermediates\pre-dexed\debug\ormlite-android-4.49-SNAPSHOT_83901b7c705a63e4fa519aedfb66540a25360d45.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MCC\Desktop\news_ybt\news\app\libs\Msc.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="361a1760accbaa7baa4ebae5fcbc92da81266e68">
+        <dex dex="C:\Users\MCC\Desktop\news_ybt\news\app\build\intermediates\pre-dexed\debug\Msc_ae8b075254acd7f3c1265cad159f31dee6079c9a.jar" />
+    </item>
+
+</items>

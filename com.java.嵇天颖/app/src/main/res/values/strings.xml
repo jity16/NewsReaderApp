@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QuickNews</string>
+    <string name="news">冯志奇</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Setting</string>
+    <string name="action_share">Share</string>
+    <string name="about">About</string>
+    <string name="main_activity_title">首页</string>
+    <string name="title_activity_news_content"> </string>
+    <string name="click_to_exit">再按一次退出程序</string>
+    <string name="delete_success">缓存清理成功</string>
+    <string name="app_home_page">http://learn.cic.tsinghua.edu.cn/common/netCourseInfo/2015-2016-3-30240332-1</string>
+    <string name="app_icon_url">http://icons.iconarchive.com/icons/designbolts/free-multimedia/1024/News-Mic-iPhone-icon.png</string>
+    <string name="setting_key_clear_cache">clear_cache</string>
+    <string name="setting_key_post_back">post_back</string>
+    <string name="setting_key_check_update">check_update</string>
+    <string name="welcome_string">您好，请问有什么需要吐槽的吗</string>
+    <string name="share_app_string">这是一个有意思的APP 你也来试试吧！</string>
+    <string name="net_unavaiable">刷新失败，请检查网络后重试</string>
+    <string name="net_avaiable">刷新成功</string>
+    <string formatted="false" name="tts_toast_format">缓冲进度为%d%%，播放进度为%d%%</string>
+</resources>

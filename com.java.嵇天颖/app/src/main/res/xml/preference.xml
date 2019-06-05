@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <PreferenceCategory
+        android:title="常规"
+        >
+        <Preference
+            android:key="@string/setting_key_check_update"
+            android:title="检查更新"
+            android:defaultValue="false"/>
+        <Preference
+            android:key="@string/setting_key_clear_cache"
+            android:title="清除缓存"
+            android:defaultValue="false"/>
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="反馈"
+        >
+        <Preference
+            android:key="@string/setting_key_post_back"
+            android:title="意见反馈"
+            android:defaultValue="false"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>

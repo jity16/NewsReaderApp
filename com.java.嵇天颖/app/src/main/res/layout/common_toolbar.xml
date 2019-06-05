@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/actionBarSize"
+    android:background="?attr/colorPrimary" >
+
+    <ImageButton
+        android:id="@+id/search_button"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_gravity="right"
+        android:background="@drawable/search_white" />
+</android.support.v7.widget.Toolbar>
